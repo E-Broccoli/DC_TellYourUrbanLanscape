@@ -1,7 +1,8 @@
 # DC_TellYourUrbanLanscape
 Deep Cities Project Crowdsourcing App - Tell Your Urban Landscape
 
-[![appavatar] (https://crowdsourced.micropasts.org/project/Urblan/)](https://www.stir.ac.uk/)
+PATH = "/Users\Elisa\Desktop\Canongate"
+Image(filename = PATH + "Immagine1.jpg", width=100, height=100)
 
 ===============================================
 
