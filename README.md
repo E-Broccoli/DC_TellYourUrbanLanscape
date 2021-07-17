@@ -1,9 +1,6 @@
 # DC_TellYourUrbanLanscape
 Deep Cities Project Crowdsourcing App - Tell Your Urban Landscape
 
-PATH = "/Users\Elisa\Desktop\Canongate"
-Image(filename = PATH + "Immagine1.jpg", width=100, height=100)
-
 ===============================================
 
 This app use the PyBossa geo-demo project: Urban Parks in cities.
