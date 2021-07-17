@@ -1,9 +1,12 @@
 # DC_TellYourUrbanLanscape
 Deep Cities Project Crowdsourcing App - Tell Your Urban Landscape
 
+[![appavatar] (https://crowdsourced.micropasts.org/project/Urblan/)](https://www.stir.ac.uk/)
 
-PyBossa geo-demo project: Urban Parks in cities
 ===============================================
+
+This app use the PyBossa geo-demo project: Urban Parks in cities.
+
 
 This demo project shows how you can use PyBossa for geo-coding problems.
 
@@ -14,7 +17,6 @@ urban park.
 Thanks to the use of OpenLayers the data can be exported in any standard GIS format:
 KML, GeoJSON, etc. In this project the answers are saved as GeoJSON.
 
-![alt screenshot](http://i.imgur.com/XMVyNKV.png)
 
 The project has five main files:
 
