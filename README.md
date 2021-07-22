@@ -1,5 +1,5 @@
-# DC_TellYourUrbanLanscape
-Deep Cities Project Crowdsourcing App - Tell Your Urban Landscape
+# DC_Your city, Your place
+Deep Cities Project Crowdsourcing App - Your city, Your place
 
 ===============================================
 
@@ -10,7 +10,7 @@ This demo project shows how you can use PyBossa for geo-coding problems.
 
 The project is a simple demo that uses OpenLayers JavaScript library to load a map,
 center it and add a point to the map, in order to mark the position of the
-urban park. 
+urban park.
 
 Thanks to the use of OpenLayers the data can be exported in any standard GIS format:
 KML, GeoJSON, etc. In this project the answers are saved as GeoJSON.
@@ -133,5 +133,4 @@ Please, see the COPYING file.
 
 Acknowledgments
 ===============
-The thumbnail has been created using a [photo](http://www.flickr.com/photos/infomatique/5489548540/) from William Murphy (license CC¬BY-SA 2.0).
-
+The thumbnail has been created using a [photo](http://www.flickr.com/photos/infomatique/5489548540/) from William Murphy (license CCï¿½BY-SA 2.0).

@@ -1,51 +1,84 @@
-<div class="row">
-    <div class="col-md-12">
-        <div id="modal" class="modal hide fade">
-            <div class="modal-header">
-                <h3>Urban Parks tutorial</h3>
-            </div>
-            <div id="0" class="modal-body" style="display:none">
-                <p><strong>Hi!</strong> This is a <strong>demo project</strong> that shows how you can do geo-coding problems with web mapping tools using the PyBossa framework in Crowdcrafting.org.
-               </p> 
-            </div>
-            <div id="1" class="modal-body" style="display:none">
-                <p>The application is really simple. It loads a city from the world into the web map, centers the map and the goal is to browse the map and find one urban park.</p>
-                <p>The web map provides different layers so you can change between them in order to get some help from satellite images.
-                </p>
-                <p>When you find an Urban Park, click in the black button: <strong>Urban Park Marker</strong> and place it in the middle of the park. Then click submit and you will have completed one task.</p>
-            </div>
-            <div class="modal-footer">
-                <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn">Previous</a>
-                <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-success">Next</a>
-                <a id="startContrib" href="../urbanpark/newtask" class="btn btn-primary" style="display:none"><i class="fa fa-thumbs-o-up"></i> Try the demo!</a>
-            </div>
-        </div>
-    </div>
+<div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<!-- Modal header -->
+<div class="modal-header">
+  <h3>How to share your story</h3>
 </div>
-<script>
-    var step = -1;
-    function showStep(action) {
-        $("#" + step).hide();
-        if (action == 'next') {
-            step = step + 1;
-        }
-        if (action == 'prev') {
-            step = step - 1;
-        }
-        if (step == 0) {
-            $("#prevBtn").hide();
-        }
-        else {
-            $("#prevBtn").show();
-        }
 
-        if (step == 1 ) {
-            $("#nextBtn").hide();
-            $("#startContrib").show();
-        }
-        $("#" + step).show();
+<!-- Step 1 of the tutorial -->
+<div id="0" class="modal-body" style="display:none">
+  <p style="text-align: justify;">
+    This application enables the collection of current experiences and past memories related to the current New Waverley area in North Canongate, Edinburgh.
+  </p>
+  <p style="text-align: justify;">
+    It loads a map of the area, and once you have found the location of a place or building significant to you, just click on it. A marker will be added to the map.
+    <p>
+      <img src="https://blog.micropasts.org/wp-content/uploads/2021/07/markermap-e1626902464459.png" />
+    </p>
+  </div>
+
+  <!-- Step 2 of the tutorial -->
+  <div id="1" class="modal-body" style="display:none">
+    <p style="text-align: justify;">
+      Please use the Memory Box to share your story. First, type the name of the place/building if you know it, and an indicative date (for example 80s). Then, tell us why that place is significant to you.
+      <p>
+        <img src="https://blog.micropasts.org/wp-content/uploads/2021/07/memorybox.jpg" />
+      </p>
+    </div>
+
+    <!-- Step 3 of the tutorial -->
+    <div id="2" class="modal-body" style="display:none">
+      <p style="text-align: justify;">
+        Press the green button "Save the place and your memories" to submit your story!
+        <p>
+          <img src="https://blog.micropasts.org/wp-content/uploads/2021/07/submit-e1626898527956.png" />
+        </p>
+        <p style="text-align: justify;">
+          Finally, if you have an old pic of the place/building or of the area, please send it to us at deepcitiesapp@gmail.com, indicating place name and date.
+        </p>
+        <p>
+          Use the same e-mail address if you have any comments or any doubts about the app.
+        </p>
+      </div>
+      <!-- End of stepped modal body -->
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn btn-default">Previous</a>
+        <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-success">Next</a>
+        <a id="startContrib" data-dismiss="modal" href="../{{project.short_name}}/newtask" class="btn btn-primary"
+        style="display:none"/><i class="glyphicon glyphicon-thumbs-up"></i> Let's start!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  var step = -1;
+  function showStep(action) {
+    $("#" + step).hide();
+    if (action == 'next') {
+      step = step + 1;
     }
-
-    showStep('next');
-    $("#modal").modal('show');
+    if (action == 'prev') {
+      step = step - 1;
+    }
+    if (step == 0) {
+      $("#prevBtn").hide();
+      $("#nextBtn").show();
+    }
+    else {
+      $("#prevBtn").show();
+    }
+    if (step == 2 ) {
+      $("#nextBtn").hide();
+      $("#prevBtn").show();
+      $("#startContrib").show();
+    }
+    $("#" + step).show();
+  }
+  showStep('next');
+  $("#myModal").modal('show');
 </script>
