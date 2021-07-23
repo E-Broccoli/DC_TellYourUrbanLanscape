@@ -5,7 +5,6 @@ Deep Cities Project Crowdsourcing App - Your city, Your place
 
 This app use the PyBossa geo-demo project: Urban Parks in cities.
 
-
 This demo project shows how you can use PyBossa for geo-coding problems.
 
 The project is a simple demo that uses OpenLayers JavaScript library to load a map,
@@ -112,11 +111,6 @@ our users, and a small tutorial for the volunteers:
 ```bash
     $ pbs update_project
 ```
-
-Done!
-
-**NOTE**: we provide templates also for Bootstrap v2 in case your PyBossa
-server is using Bootstrap2 instead of Bootstrap3. See the rest of the files.
 
 
 Documentation
