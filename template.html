@@ -334,7 +334,7 @@
                      $('#question').html(task.info.question);
                      $('#taskid').html(task.id);
                      $('#city').html('').append(task.info.city);
-
+                     Connections = '[]';
                      var handleBtn = function(evt) {
                      toggleBtn(this, task);
                    };
@@ -360,9 +360,11 @@
                          deferred.resolve();
                          $('#lat').empty();
                          $('#lon').empty();
+                         Connections = '[]';
                          map.removeLayer(Marker);
                          map.invalidateSize();
                          map.on('click', onClick);
+                         $('.btn-tag.connections').removeClass('active');
                        });
                      } else {
                        $("#error").show();
